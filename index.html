@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Water Drop Game</title>
@@ -17,11 +18,29 @@
             <button id="start-btn">Start Game</button>
             <button id="reset-btn">Reset</button>
         </div>
-        
+        <div id="difficulty">
+  <button onclick="setDifficulty('easy')">Easy</button>
+  <button onclick="setDifficulty('normal')">Normal</button>
+  <button onclick="setDifficulty('hard')">Hard</button>
+</div>
         <div id="game-container">
         </div>
     </div>
     
+
+<p id="goal"></p>
+<footer>
+  <p>Support clean water access 🌍</p>
+  <a href="https://www.charitywater.org/" target="_blank">charity: water Website</a>
+  |
+  <a href="https://www.charitywater.org/donate" target="_blank">Donate to charity: water</a>
+</footer>
+
+<p id="milestone-message"></p>
+
+
+
+
     <script src="script.js"></script>
 </body>
 </html>

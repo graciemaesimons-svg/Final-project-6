@@ -11,10 +11,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-
-    background-color: #ffffff; /* clean + bright */
-    font-family: 'Fredoka', sans-serif;
-    color: #231f20;
+font-family: 'montserrat', sans-serif;
+    background-color: #fff7e1; 
+    text-align: center;
 }
 
 .game-wrapper {
@@ -104,7 +103,7 @@ body {
     width: 50px;
     height: 50px;
 
-    background-color: #2E9DF7;
+    background-color: #00AEEF;
     border-radius: 50%;
 
     animation: dropFall linear forwards;
@@ -126,6 +125,11 @@ body {
     to {
         transform: translateY(400px);
     }
+}
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #f4f4f4;
 }
 
 /* MOBILE */
