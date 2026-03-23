@@ -1,0 +1,145 @@
+/* charity: water inspired styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-color: #ffffff; /* clean + bright */
+    font-family: 'Fredoka', sans-serif;
+    color: #231f20;
+}
+
+.game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+/* TITLE */
+.game-title {
+    color: #231f20;
+    font-size: 42px;
+}
+
+.game-tagline {
+    color: #555;
+}
+
+/* SCORE PANEL */
+.score-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    max-width: 500px;
+
+    padding: 12px 16px;
+
+    background-color: #FFC907; /* 🔥 BRAND YELLOW */
+    color: #231f20;
+
+    border-radius: 10px;
+}
+
+/* TEXT */
+.score,
+.timer {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* GAME AREA */
+#game-container {
+    width: 90%;
+    max-width: 500px;
+    height: 400px;
+
+    background-color: #EAF6FF; /* light clean blue */
+    border: 2px solid #2E9DF7;
+
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* BUTTONS */
+#start-btn {
+    background-color: #2E9DF7;
+    color: white;
+    font-weight: bold;
+}
+
+#start-btn:hover {
+    background-color: #1c7ed6;
+}
+
+/* RESET BUTTON */
+#reset-btn {
+    background-color: white;
+    color: #2E9DF7;
+    border: 2px solid #2E9DF7;
+}
+
+#reset-btn:hover {
+    background-color: #EAF6FF;
+}
+
+/* WATER DROPS */
+.water-drop {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    background-color: #2E9DF7;
+    border-radius: 50%;
+
+    animation: dropFall linear forwards;
+    cursor: pointer;
+
+    box-shadow: 0 0 8px rgba(46,157,247,0.6);
+}
+
+/* BAD DROPS */
+.bad-drop {
+    background-color: #231f20;
+}
+
+/* ANIMATION */
+@keyframes dropFall {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(400px);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    #game-container {
+        height: 60vh;
+    }
+
+    .score-panel {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .game-title {
+        font-size: 28px;
+    }
+}
